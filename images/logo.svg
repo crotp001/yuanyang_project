@@ -1,0 +1,23 @@
+<svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .wave {
+      animation: wave-logo 6s ease-in-out infinite;
+      transform-origin: bottom center;
+    }
+    @keyframes wave-logo {
+      0%, 100% { transform: skewX(0deg) translateY(0px); }
+      25% { transform: skewX(-3deg) translateY(-2px); }
+      75% { transform: skewX(3deg) translateY(-1px); }
+    }
+    .text-fill {
+      fill: hsl(var(--primary)); /* Use primary color from CSS variables */
+    }
+    .dark .text-fill {
+      fill: hsl(var(--primary-foreground)); /* Use primary-foreground color in dark mode */
+    }
+  </style>
+  <path d="M10 50 Q 30 30, 50 50 T 90 50 T 130 50 T 170 50 T 190 50" stroke="hsl(var(--accent))" stroke-width="3" fill="none" class="wave"/>
+  <text x="50%" y="35" dominant-baseline="middle" text-anchor="middle" font-family="var(--font-noto-sans-jp, Noto Sans JP), sans-serif" font-size="24" font-weight="bold" class="text-fill">
+    遠洋興業
+  </text>
+</svg>
